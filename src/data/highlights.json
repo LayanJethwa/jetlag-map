@@ -1,0 +1,28 @@
+[
+    {
+        "season": 1,
+        "data": [
+            {"name": "Colorado", "team": "red"},
+            {"name": "Wyoming", "team": "red"},
+            {"name": "California", "team": "yellow"},
+            {"name": "Nevada", "team": "yellow"},
+            {"name": "Arizona", "team": "red"},
+            {"name": "Idaho", "team": "yellow"},
+            {"name": "Oregon", "team": "red"},
+            {"name": "Utah", "team": "red"},
+            {"name": "Montana", "team": "yellow"}
+        ]
+    },
+    {
+        "season": 2,
+        "data": []
+    },
+    {
+        "season": 3,
+        "data": [
+            {"team": "red", "bearings": [325, 85], "centre": [4.28896,49.56685], "radius": 477.5},
+            {"team": "green", "bearings": [85, 205], "centre": [4.28896,49.56685], "radius": 477.5},
+            {"team": "yellow", "bearings": [205, 325], "centre": [4.28896,49.56685], "radius": 477.5}
+        ]
+    }
+]

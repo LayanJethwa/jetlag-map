@@ -1,0 +1,391 @@
+[
+	{
+		"season": 1,
+		"challenges": [
+			{
+				"location": "Cheyenne",
+				"title": "Catch 3 different local bugs",
+				"description": "You must have all 3 bugs at the same time.\n\nThe bugs do not have to be local in origin but you must have caught them in the state.\n\nThey must be different kinds of bugs. You may not, for example, catch 3 mosquitos.",
+				"team": "red"
+			},
+			{
+				"location": "Denver",
+				"title": "Get One Team Member Intoxicated",
+				"description": "You may get intoxicated at any bar in the state.\n\nIf there are no bars open, you may go to a restaurant. If there are no restaurants or bars open, you may get drunk wherever you like.\n\nIf it is impossible to buy alcohol in the next hour, you may draw another card.\n\nSee the intoxication chart for reference.",
+				"team": "red"
+			},
+			{
+				"location": "Sacramento",
+				"title": "Eat Spicy Food",
+				"description": "Go to a local Indian restaurant and ask them for the hottest food they can serve you. Eat the entire thing.\n\nWhile ordering, you must say “I want the spiciest thing on the menu”.\n\nIf there is no Indian restaurant open within 20 miles, you may go to a Chinese, Thai, or Mexican restaurant.\n\nIf no such restaurants are open within 20 miles, you may draw another card.",
+				"team": "yellow"
+			},
+			{
+				"location": "Carson City",
+				"title": "Bowl A Strike",
+				"description": "It must be at a bowling alley. You cannot use makeshift bowling pins.\n\nIf there is not an open bowling alley within 20 miles, you may pull another card.",
+				"team": "yellow"
+			},
+			{
+				"location": "Phoenix",
+				"title": "Buy the Local Paper and Solve One of the Puzzles",
+				"description": "The paper must be local to the town or the state.\n\nIf no local paper has any puzzles, then draw a new card.",
+				"team": "red"
+			},
+			{
+				"location": "Salem",
+				"title": "Bury a Treasure",
+				"description": "The treasure must be worth at least $50.\n\nYou must leave a conspicuous sign next to the treasure so that someone may find it.\n\nThe buried treasure must be completely covered.\n\nThe treasure must be at least 3 inches underground.\n\nThe treasure cannot be cash or a check.\n\nYou must preserve the treasure such that whoever digs it up can use/enjoy it. This may be as simple as putting it in a plastic bag.",
+				"team": "red"
+			},
+			{
+				"location": "Boise",
+				"title": "Find a Statue and Recreate It",
+				"description": "The statue must be at least 100 meters from the capitol building.\n\nYou may not use the internet to locate the statue.\n\nYou must hold the pose for at least 5 minutes.\n\nThe statue does not need to be human, but you still must do your best to recreate it with your bodies.",
+				"team": "yellow"
+			},
+			{
+				"location": "Salt Lake City",
+				"title": "Busk and Earn a Dollar",
+				"description": "You may have a sign, but you may not verbally ask people for money.\n\nYou must do some sort of performance to earn the money, you cannot just ask for it.\n\nYou may add any money earned to the budget.",
+				"team": "red"
+			},
+			{
+				"location": "Helena",
+				"title": "Claim the State Immediately But …",
+				"description": "In order to book your next flight, you must call the airline and not use the following words. If you say any of the words, you must apologize, hang up, and try again. You may not rehearse or write out what you are going to say ahead of time.\n\n• Flight\n• Fly\n• Go\n• Plane\n• Time\n• Yes\n• No\n• Arrive\n• Depart\n• Leaving\n• Get\n• Need\n• Want\n• Hello\n• Hi\n• (Any City Name)",
+				"team": "yellow"
+			}
+		]
+	},
+	{
+		"season": 2,
+		"challenges": [
+			{
+				"location": "New York City",
+				"title": "Run a “local pastry mile”",
+				"description": "Run one mile on a track in under 15 minutes. At the beginning of the mile—and after every quarter mile—you must stop and eat the entirety of one pastry that originated (or was significantly modified) in the country that you’re currently in. These pastries must be roughly equivalent to one donut in weight. Only one team member needs to participate.",
+				"team": "red",
+				"prize": 650,
+				"budget": 150
+			},
+			{
+				"location": "Amsterdam Schiphol",
+				"title": "Take a photo at your city’s top 5 landmarks",
+				"description": "In this challenge, “top 5 landmarks” are defined as the 5 most popular “attractions” on TripAdvisor that have at least 1,000 reviews. You may only travel by public transit; no taxis or ride-sharing allowed. The photos must be taken within at least 500 feet of each attraction. The photos must be taken within at least 500 feet of each attraction, and, if applicable, at least one photo must be taken in the attraction after gaining admission.",
+				"team": "yellow",
+				"prize": 900,
+				"budget": 100
+			},
+			{
+				"location": "Milan MXP T1",
+				"title": "Build and ride a go-kart",
+				"description": "You must build a go-kart with at least four wheels, and one team member must ride it at least 100 feet down a hill without it falling apart. No pre-built wagons, carts, or frames. Wheels on an axel are acceptable.",
+				"team": "red",
+				"prize": 1200,
+				"budget": 300
+			},
+			{
+				"location": "Vondelpark Amsterdam",
+				"title": "Visit the US Consulate",
+				"description": "You may not use your phone or the internet to look up where your local consulate is. You may only travel by public transit; no taxis or ride-sharing allowed.",
+				"team": "yellow",
+				"prize": 500,
+				"budget": 50
+			},
+			{
+				"location": "Busto Arsizio",
+				"title": "Give your teammate a piggyback ride",
+				"description": "You must give your teammate a piggyback ride around the entire perimeter of a local park. You may switch off at any point.",
+				"team": "red",
+				"prize": 250,
+				"budget": 50
+			},
+			{
+				"location": "Museumstraat Amsterdam",
+				"title": "Touch a bird",
+				"description": "You must touch the bird with your hands. The bird must be real and alive.",
+				"team": "yellow",
+				"prize": 300,
+				"budget": 50
+			},
+			{
+				"location": "Max Euweplein Amsterdam",
+				"title": "Gamble at a Casino",
+				"description": "You do not need to bet the money all at once; you just need to bet a total of at least $200 over any number of games. You win whatever money you leave the casino with.",
+				"team": "yellow",
+				"prize": "Variable",
+				"budget": "250 ($50 for travel)"
+			},
+			{
+				"location": "Leidsestraat Amsterdam",
+				"title": "Eat a menu item at McDonald’s that you can’t get in the US",
+				"description": "The menu item must be currently unavailable at any McDonald’s in the United States. Both team members must order and eat/drink an entire dish.",
+				"team": "yellow",
+				"prize": "200",
+				"budget": "50"
+			},
+			{
+				"location": "Leidseplein Amsterdam",
+				"title": "Transfer a cup of fountain water from one fountain to another",
+				"description": "You may not use your phone to look up the location of fountains. The two fountains may not be within eyesight of one another. If you spill more than 1/4 of the cup while searching for the second fountain, you must restart.",
+				"team": "yellow",
+				"prize": "400",
+				"budget": "50"
+			},
+			{
+				"location": "Pieter Cornelisz Hooftstraat Amsterdam",
+				"title": "Purchase a hat worth more than $100",
+				"description": "You may not use your phone or the internet to look up where to purchase a hat. One team member must wear the hat, whenever possible, for the rest of the game.",
+				"team": "yellow",
+				"prize": "400",
+				"budget": "200"
+			},
+			{
+				"location": "Museumplein Amsterdam",
+				"title": "Ascend 500 feet/152 meters to a high point without touching pavement",
+				"description": "You must ascend by foot. Pavement means concrete, asphalt, or any other paved pathway.",
+				"team": "yellow",
+				"prize": "600",
+				"budget": "100"
+			},
+			{
+				"location": "Elandsgracht Amsterdam",
+				"title": "Pick up three pounds of trash",
+				"description": "The trash must be litter; you cannot take trash from a place that trash is supposed to be. Throw the trash out after picking it up.",
+				"team": "yellow",
+				"prize": "550",
+				"budget": "50"
+			},
+			{
+				"location": "Marnixstraat 1000 Amsterdam",
+				"title": "Make a 30-second parkour video",
+				"description": "The video must feature both teammates attempting to do parkour in an urban area. You must create and edit an actual video with music, transitions, and at least 2 effects.",
+				"team": "yellow",
+				"prize": "800",
+				"budget": "50"
+			},
+			{
+				"location": "Siloso Beach Singapore",
+				"title": "Go bungee jumping",
+				"description": "You must go bungee jumping with a professional bungee jumping company. No makeshift bungee jumping. Only one team member needs to participate.",
+				"team": "red",
+				"prize": "1200",
+				"budget": "800"
+			},
+			{
+				"location": "Palawan Beach Singapore",
+				"title": "Travel 1 mile on water under human power",
+				"description": "You can travel in any vessel you’d like, but it cannot be powered by a motor or sail. Any body of water is acceptable. Both team members must travel that distance.",
+				"team": "red",
+				"prize": "700",
+				"budget": "200"
+			},
+			{
+				"location": "Crawford Lane Singapore",
+				"title": "Eat at a Michelin-starred restaurant",
+				"description": "The restaurant must currently hold at least one Michelin star. You must order and eat at least one main dish each.",
+				"team": "red",
+				"prize": "500",
+				"budget": "200"
+			},
+			{
+				"location": "Bayfront Singapore",
+				"title": "Have a good time",
+				"description": "You must have a good time for at least 2 hours. This time must be spent actively and on a variety of activities; you cannot sleep. If you do not have a sufficiently good time, the audience must yell at you.",
+				"team": "yellow",
+				"prize": "300",
+				"budget": "400"
+			},
+			{
+				"location": "Beulah Street Kirribilli Sydney",
+				"title": "Catch a fish",
+				"description": "The fish must be caught in the wild, and must be alive. You must catch the fish with a net, a fishing rod, or your bare hands. Release the fish after catching it.",
+				"team": "red",
+				"prize": "800",
+				"budget": "150"
+			},
+			{
+				"location": "Santa Monica Pier",
+				"title": "Get drunk on a local liquor",
+				"description": "“Drunk” is measured as a 0.08 BAC according to a weight chart. The liquor must be purchased at a bar or restaurant, and must be exclusively produced within the country you’re in. Both team members must participate.",
+				"team": "red",
+				"prize": "300",
+				"budget": "100"
+			}
+		]
+	},
+	{
+		"season": 3,
+		"challenges": [
+			{
+				"location": "Lille",
+				"title": "Eat at the Worst Restaurant",
+				"description": "Using Trip Advisor, you must determine the worst-reviewed restaurant within 2 miles and eat a full meal there. It must have at least 10 reviews.\n\nIf the restaurant is closed, you can select the next worst reviewed restaurant that is open.\n\nIt must be something prepared by the restaurant - nothing pre-packaged.",
+				"team": "red",
+				"reward": 1200
+			},
+			{
+				"location": "Pont Jacquard Calais",
+				"title": "Commit an American Crime",
+				"description": "Do something that is legal in your current country that would not be legal in the state where you actually reside.",
+				"team": "yellow",
+				"reward": 600
+			},
+			{
+				"location": "Quai de la Tamise Calais",
+				"title": "Cursed!",
+				"description": "The name of the next town, city, or municipality that you disembark in cannot be longer than 5 letters.\n\nUnless vetoed, this card is claimed immediately.",
+				"team": "yellow",
+				"reward": 750
+			},
+			{
+				"location": "Place D'Armes Calais",
+				"title": "Swap To A Tote",
+				"description": "Find a tote bag. Remove every item from your backpack and put them in the tote bag. You may not use your backpack until the next time you get tagged.\n\nIf one tote bag is not enough to fit all of your possessions, you may use multiple tote bags.\n\nAny bag that you carry with handles like a tote bag counts as a tote bag.",
+				"team": "yellow",
+				"reward": 1000
+			},
+			{
+				"location": "Rue Margolle Calais",
+				"title": "Estimate Your City’s Population",
+				"description": "You may only guess once.\n\nIn this context, city means municipality.\n\nYou cannot use your phone, the internet, or ask anyone any questions while this challenge is active.\n\nIf you are off by more than 25%, this card is automatically vetoed.",
+				"team": "yellow",
+				"reward": 1000,
+				"veto": true
+			},
+			{
+				"location": "Pont Henri Henon Calais",
+				"title": "Visit the Top Attraction",
+				"description": "Determine the #1 attraction on TripAdvisor within two miles and get within 500 feet of it.\n\nYou do not need to gain admittance to the attraction.\n\nList, on camera, the top five things you like about it.",
+				"team": "yellow",
+				"reward": 750
+			},
+			{
+				"location": "Bd Jacquard Calais",
+				"title": "Visit Any Museum",
+				"description": "You must gain entry to the museum, spend at least 20 minutes there, and share a fact that you learned.",
+				"team": "yellow",
+				"reward": 1000,
+				"veto": true
+			},
+			{
+				"location": "Bd de Denain Paris",
+				"title": "Eat a Fast Three Course Meal",
+				"description": "Each course must be purchased at a different fast food chain.\n\nYou must sit down at the restaurant and complete your whole course before moving on to the next meal.\n\nThe courses are: appetizer, main, and dessert. The appetizer can be anything, but the main must be advertised as main, and the dessert must be advertised as dessert.",
+				"team": "green",
+				"reward": 1000
+			},
+			{
+				"location": "Rue de Dunkerque Paris",
+				"title": "Cursed!",
+				"description": "Until the next time you get tagged, you cannot use your phone to research information. You may only use it for the following things:\n\n- Booking seat reservation (but NOT researching routes)\n- Filming\n- Verifying answers if a challenge requires it\n- Accounting\n- Emergencies\n\nUnless vetoed, this card is claimed immediately.",
+				"team": "green",
+				"reward": 2000
+			},
+			{
+				"location": "Rue de la Harpe Paris",
+				"title": "Use a Fancy Restroom",
+				"description": "Use the restroom of a hotel that costs more than $500 that night.\n\nYou must actually use the restroom.",
+				"team": "green",
+				"reward": 750,
+				"veto": true
+			},
+			{
+				"location": "Quai Saint-Michel Paris",
+				"title": "Do 100 Squats",
+				"description": "For a full squat, your thighs must be parallel to the ground.\n\nYou may move or rest between squats.",
+				"team": "green",
+				"reward": 500
+			},
+			{
+				"location": "Quai Francois Mauriac Paris",
+				"title": "Go Exactly One Mile",
+				"description": "Close your eyes, spin in a circle, and point in a random direction. You must go as close as possible (on publicly accessible land) to the location exactly 1 mile in that direction.",
+				"team": "green",
+				"reward": 750,
+				"veto": true
+			},
+			{
+				"location": "Rue de General Leclerc Saint-Quentin",
+				"title": "Eat the National Desert",
+				"description": "It must be the national dessert of the country you are currently in.\n\nYou must eat at least one serving of the dessert.\n\nFrance: Profiteroles\nGermany: Berliner\nEngland: Trifle\nBelgium: Gaufre\nThe Netherlands: Strooppwafel\nSwitzerland: Meringue",
+				"team": "red",
+				"reward": 900,
+				"veto": true
+			},
+			{
+				"location": "Saint-Quentin",
+				"title": "Estimate Your City’s Population",
+				"description": "You may only guess once.\n\nIn this context, city means municipality.\n\nYou cannot use your phone, the internet, or ask anyone any questions while this challenge is active.\n\nIf you are off by more than 25%, this card is automatically vetoed.",
+				"team": "red",
+				"reward": 1000
+			},
+			{
+				"location": "Maubeuge",
+				"title": "Go Exactly One Mile",
+				"description": "Close your eyes, spin in a circle, and point in a random direction. You must go as close as possible (on publicly accessible land) to the location exactly 1 mile in that direction.",
+				"team": "red",
+				"reward": 750,
+				"veto": true
+			},
+			{
+				"location": "Fonsnylaan Brussels",
+				"title": "Cursed!",
+				"description": "Roll a die. Whatever number you roll, you must take that number train on the departure board at your nearest station (If you roll a 4, you must take the fourth train on the board, etc.)\n\nUnless vetoed, this card is claimed immediately.",
+				"team": "red",
+				"reward": 800
+			},
+			{
+				"location": "Luchthaven Brussels",
+				"title": "Find a Fancy Car",
+				"description": "The car must have a sticker price of more than €100,000 (or equivalent) in the country you’re currently in.\n\nYou must film yourself in front of the car.\n\nIt must be a real car, not a depiction.",
+				"team": "red",
+				"reward": 900
+			},
+			{
+				"location": [4.483415969523144, 50.896820957241786],
+				"title": "Touch an Animal that’s not a Pet",
+				"description": "The animal must be mouse sized or bigger.\n\nThe animal must be alive.\n\nThe animal may be in captivity/domesticated, but it may not be attempting to become a pet (no shelters or pet stores).",
+				"team": "yellow",
+				"reward": 750
+			},
+			{
+				"location": "Fontanestrasse 50670 Koln",
+				"title": "Go Exactly One Mile",
+				"description": "Close your eyes, spin in a circle, and point in a random direction. You must go as close as possible (on publicly accessible land) to the location exactly 1 mile in that direction.",
+				"team": "yellow",
+				"reward": 750
+			},
+			{
+				"location": "Bahnhofsvorplatz Koln",
+				"title": "Eat the National Desert",
+				"description": "It must be the national dessert of the country you are currently in.\n\nYou must eat at least one serving of the dessert.\n\nFrance: Profiteroles\nGermany: Berliner\nEngland: Trifle\nBelgium: Gaufre\nThe Netherlands: Strooppwafel\nSwitzerland: Meringue",
+				"team": "yellow",
+				"reward": 900
+			},
+			{
+				"location": "Am Alten Ufer Koln",
+				"title": "Hide and Seek",
+				"description": "Alert the chasers as soon as you pull this card.\n\nChoose a building within 2 miles of where you are now. Send the chasers its address, turn off your tracker, and then find a hiding place.\n\nOne you have chosen a hiding place, you may not move until you are caught or you claim the card.\n\nThe chasers have 1 hour from the time that you turn off your tracker to find you.\n\nIf you last 1 hours the card is claimed. You may wait up to a half an hour before turning your tracker back on.",
+				"team": "yellow",
+				"reward": 1500
+			},
+			{
+				"location": "Strasbourg",
+				"title": "Get 1000 FT from Any Building",
+				"description": "A building is defined as any man made structure large enough and capable of fitting people inside of it.\n\nYou must either be able to see 1000 ft in all directions or search thoroughly enough to prove that there are no buildings.\n\nThis cannot be claimed while in motion.",
+				"team": "green",
+				"reward": 1500,
+				"veto": true
+			},
+			{
+				"location": "Pl de la Gare Strasbourg",
+				"title": "Hide Your Phone and Leave",
+				"description": "You must place your personal phone down in a publicly-accessible location. It does not need to be visible. Travel at least 0.25 miles away from your phone before you return to retrieve it.\n\nIf the phone is stolen, Sam will pay for 75% of it.",
+				"team": "green",
+				"reward": 900
+			}
+		]
+	}
+]

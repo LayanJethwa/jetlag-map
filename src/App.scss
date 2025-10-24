@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'Infra';
+  src: url('./assets/infra/InfraRegular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Infra';
+  src: url('./assets/infra/InfraBlack.otf') format('opentype');
+  font-weight: 1000;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Infra';
+  src: url('./assets/infra/InfraRegularItalic.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+html,
+body,
+#root,
+.App {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.map-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.mapboxgl-popup {
+  color: black;
+}
+.mapboxgl-popup-content {
+  border: 2px solid #333;
+  border-radius: 5px;
+  width: 200px;
+  height: 290px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  font-family: "Infra";
+  color: #222;
+  padding-top: 0;
+  h3 {
+    font-weight: 1000;
+    text-transform: uppercase;
+  }
+  h4 {
+    font-weight: 100;
+  }
+  p {
+    font-size: xx-small;
+    line-height: 1.1;
+    white-space: pre-line;
+  }
+}
+
+.map-selector {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 12px 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  font-family: "Inter", sans-serif;
+}
+
+.map-selector select {
+  font-size: 1.2rem;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  background-color: white;
+  transition: 0.2s;
+  cursor: pointer;
+  color: black;
+}
+
+.selector-label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+}
+
+.map-selector select option:hover {
+  background-color: #99c8ff;
+}

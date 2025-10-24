@@ -1,0 +1,31 @@
+[
+    {
+        "season": 1,
+        "data": [
+            {"team": "red",
+            "locations": ["Chicago", "Denver", "Cheyenne", "Denver", "Phoenix", "Portland", "Salem", "Portland", ["Salt Lake City", "Butte MO"], "Butte MO", "Helena"]},
+            {"team": "yellow",
+            "locations": ["Chicago", "San Francisco", "Sacramento", "Carson City", "Reno", "Phoenix", "Boise", ["Salt Lake City", "Butte MO"], "Butte MO", "Helena"]}
+        ]
+    },
+    {
+        "season": 2,
+        "data": [
+            {"team": "red",
+            "locations": ["Denver", "New York City", "Busto Arsizio", "Singapore", "Sydney", "Nadi", "Los Angeles", "Denver"]},
+            {"team": "yellow",
+            "locations": ["Denver", "Cancun", "Amsterdam", "Singapore"]}
+        ]
+    },
+    {
+        "season": 3,
+        "data": [
+            {"team": "red",
+            "locations": ["Charleville", "Lille", "Dunkirk", "Calais", "Amiens", "Rue de Dunkerque Paris", "Quai Saint-Michel Paris", "Pl Louis Armand Paris", "Quai Francois Mauriac Paris", "Vilmorin", "Quai Saint-Michel Paris", "Rue de Dunkerque Paris", "Saint-Quentin", "Maubeuge", "Lille", "Fonsnylaan Brussels", "Luchthaven Brussels", "Fonsnylaan Brussels", "Strasbourg", "Offenburg", "Karlsruhe", "Mannheim", "Stuttgart", "Karlsruhe", "Strasbourg", "Rdpt D'Europe Bezannes", "Ormes Marne"]},
+            {"team": "yellow",
+            "locations": ["Charleville", "Hirson", "Lille", "Calais", "Amiens", "Rue de Dunkerque Paris", "Quai Saint-Michel Paris", "Pl Louis Armand Paris", "Quai Francois Mauriac Paris", "Vilmorin", "Quai Saint-Michel Paris", "Rue de Dunkerque Paris", "Tergnier", "Amiens", "Lille", "Fonsnylaan Brussels", "Luchthaven Brussels", "Rue Du Progres Brussels", "Bahnhofsvorplatz Koln", "Fontanestrasse 50670 Koln", "Bahnhofsvorplatz Koln", "Frankfurt", "Mannheim", "Stuttgart", "Karlsruhe", "Strasbourg", "Rdpt D'Europe Bezannes", "Ormes Marne"]},
+            {"team": "green",
+            "locations": ["Charleville", "Hirson", "Lille", "Dunkirk", "Calais", "Rue de Dunkerque Paris", "Quai Saint-Michel Paris", "Quai Francois Mauriac Paris", "Juvisy", "Vilmorin", "Quai Saint-Michel Paris", "Rue de Dunkerque Paris", "Tergnier", "Amiens", "Lille", "Fonsnylaan Brussels", "Luchthaven Brussels", "Fonsnylaan Brussels", "Strasbourg", "Offenburg", "Karlsruhe", "Mannheim", "Stuttgart", "Karlsruhe", "Strasbourg", "Rdpt D'Europe Bezannes", "Ormes Marne"]}
+        ]
+    }
+]
