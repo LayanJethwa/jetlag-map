@@ -1,16 +1,23 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Jet Lag map
 
-Currently, two official plugins are available:
+This is a map of challenges and routes taken in the series Jet Lag: The Game. I have built it using mapboxgl, ReactJs, and Vite. It currently runs somewhat slowly as it is not yet optimized, but I hope to fix this in the future. I have manually inputted data from the first 3 seasons, and aim to eventually have all the seasons on there.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- Global or per season map view
+- Markers for challenges with full information, including veto stamps if appropriate
+- Tracks colour-coded per team, showing the routes taken
+- Highlights for certain areas of the map when pertinent to the game (see seasons 1 and 3)
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
 
-## Expanding the ESLint configuration
+## Usage
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+You can download it and run it yourself with `npm run dev`, or you can go to the website: `https://jetlag-data-map.vercel.app/`.
+
+## Demo
+
+![Screenshot1](https://github.com/LayanJethwa/jetlag-map/screenshot1.png)
+![Screenshot2](https://github.com/LayanJethwa/jetlag-map/screenshot2.png)
+![Screenshot3](https://github.com/LayanJethwa/jetlag-map/screenshot3.png)
+
