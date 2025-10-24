@@ -15,7 +15,7 @@ This is a map of challenges and routes taken in the series Jet Lag: The Game. I 
 
 You can download it and run it yourself with `npm run dev`, or you can go to the website: `https://jetlag-data-map.vercel.app/`.
 
-## Demo
+## Screenshots
 
 ![Screenshot1](https://github.com/LayanJethwa/jetlag-map/blob/main/screenshot1.png)
 ![Screenshot2](https://github.com/LayanJethwa/jetlag-map/blob/main/screenshot2.png)
