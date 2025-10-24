@@ -17,7 +17,7 @@ You can download it and run it yourself with `npm run dev`, or you can go to the
 
 ## Demo
 
-![Screenshot1](https://github.com/LayanJethwa/jetlag-map/screenshot1.png)
-![Screenshot2](https://github.com/LayanJethwa/jetlag-map/screenshot2.png)
-![Screenshot3](https://github.com/LayanJethwa/jetlag-map/screenshot3.png)
+![Screenshot1](https://github.com/LayanJethwa/jetlag-map/blob/main/screenshot1.png)
+![Screenshot2](https://github.com/LayanJethwa/jetlag-map/blob/main/screenshot2.png)
+![Screenshot3](https://github.com/LayanJethwa/jetlag-map/blob/main/screenshot3.png)
 
