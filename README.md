@@ -10,6 +10,7 @@ This is a map of challenges and routes taken in the series Jet Lag: The Game. I 
 - Tracks colour-coded per team, showing the routes taken
     - Shorter tracks are computed using the Mapbox directions API, longer ones are following great circles
 - Highlights for certain areas of the map when pertinent to the game (see seasons 1 and 3)
+- Team selector
 
 
 ## Usage

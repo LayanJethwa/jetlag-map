@@ -52,6 +52,11 @@ function App() {
     const track_dashes3 = {"red":[2,4],"yellow":[0,2,2,2],"green":[0,4,2,0]}
     const max_season = 3
     const maxDistance = 375
+    let rendered_team = "all"
+
+    function setTeam(team) {
+        rendered_team = team
+    }
 
     function setSeason(number) {
         season_number = number
@@ -92,50 +97,52 @@ function App() {
 
                 resolvedChallenges.forEach((c) => {
                     allCoords.push(c.location)
-                    new mapboxgl.Marker({ color: season_challenges.length == 1 ? colours[c.team] : season_colours[season]})
-                        .setLngLat(c.location)
-                        .setPopup(
-                        new mapboxgl.Popup({
-                            closeButton: false,
-                            closeOnClick: true,
-                            closeOnMove: true,
-                            maxWidth: "auto",
-                            offset: 25,
-                        }).setHTML(
-                            `<div style="position: relative; padding: 0.5rem;">
-                                ${c.veto ? `
-                                    <div style="
-                                        position: absolute;
-                                        top: 50%;
-                                        left: 50%;
-                                        transform: translate(-50%, -50%) rotate(-15deg);
-                                        color: rgba(255, 0, 0, 0.75);
-                                        font-size: 3.5rem;
-                                        font-weight: 900;
-                                        z-index: 10;
-                                        pointer-events: none;
-                                        white-space: nowrap;
-                                        border: 4px solid rgba(255, 0, 0, 0);
-                                        padding: 0.5rem 1rem;
-                                        border-radius: 0.5rem;">
-                                    [VETO]
-                                    </div>
-                                ` : ""}
+                    if (rendered_team == "all" || rendered_team == c.team) {
+                        new mapboxgl.Marker({ color: season_challenges.length == 1 ? colours[c.team] : season_colours[season]})
+                            .setLngLat(c.location)
+                            .setPopup(
+                            new mapboxgl.Popup({
+                                closeButton: false,
+                                closeOnClick: true,
+                                closeOnMove: true,
+                                maxWidth: "auto",
+                                offset: 25,
+                            }).setHTML(
+                                `<div style="position: relative; padding: 0.5rem;">
+                                    ${c.veto ? `
+                                        <div style="
+                                            position: absolute;
+                                            top: 50%;
+                                            left: 50%;
+                                            transform: translate(-50%, -50%) rotate(-15deg);
+                                            color: rgba(255, 0, 0, 0.75);
+                                            font-size: 3.5rem;
+                                            font-weight: 900;
+                                            z-index: 10;
+                                            pointer-events: none;
+                                            white-space: nowrap;
+                                            border: 4px solid rgba(255, 0, 0, 0);
+                                            padding: 0.5rem 1rem;
+                                            border-radius: 0.5rem;">
+                                        [VETO]
+                                        </div>
+                                    ` : ""}
 
-                                <h3>${c.title}</h3>
-                                ${c.prize ? `
-                                    <h2>PRIZE: ${
-                                        `${/^\d/.test(String(c.prize)) ? '$' : ''}${c.prize.toLocaleString("en-US")}`
-                                        .replace('$ ', '$')
-                                    }</h2>
-                                ` : ""}
-                                ${c.budget ? `<h4>Budget: \$${c.budget.toLocaleString("en-US")}</h4>` : ""}
-                                <p>${c.description}</p>
-                                ${c.reward ? `<h5>Reward: ${c.reward.toLocaleString("en-US")}</h5>` : ""}
-                            </div>`
-                        )
-                        )
-                    .addTo(map.current)
+                                    <h3>${c.title}</h3>
+                                    ${c.prize ? `
+                                        <h2>PRIZE: ${
+                                            `${/^\d/.test(String(c.prize)) ? '$' : ''}${c.prize.toLocaleString("en-US")}`
+                                            .replace('$ ', '$')
+                                        }</h2>
+                                    ` : ""}
+                                    ${c.budget ? `<h4>Budget: \$${c.budget.toLocaleString("en-US")}</h4>` : ""}
+                                    <p>${c.description}</p>
+                                    ${c.reward ? `<h5>Reward: ${c.reward.toLocaleString("en-US")}</h5>` : ""}
+                                </div>`
+                            )
+                            )
+                        .addTo(map.current)
+                    }
                 })
             }
 
@@ -213,36 +220,38 @@ function App() {
 
 
                 resolvedTracks.forEach((team) => {
-                    const lineData = {
-                        type: "Feature",
-                        geometry: {
-                            type: "MultiLineString",
-                            coordinates: team.coordinates,
-                        },
-                        properties: {},
+                    if (rendered_team == "all" || rendered_team == team.team) {
+                        const lineData = {
+                            type: "Feature",
+                            geometry: {
+                                type: "MultiLineString",
+                                coordinates: team.coordinates,
+                            },
+                            properties: {},
+                        }
+
+                        map.current.addSource(`${season}-line-${team.team}`, {
+                            type: "geojson",
+                            data: lineData,
+                        })
+                        allCoords.push(...lineData.geometry.coordinates)
+
+                        map.current.addLayer({
+                            id: `${season}-line-${team.team}`,
+                            type: "line",
+                            source: `${season}-line-${team.team}`,
+                            layout: {
+                                "line-join": "round",
+                                "line-cap": "round",
+                            },
+                            paint: {
+                                "line-color": season_challenges.length == 1 ? colours[team.team] : season_colours[season],
+                                "line-width": 3,
+                                "line-opacity": 0.8,
+                                "line-dasharray": (season == 2 || season_number == 3) ? track_dashes3[team.team] : track_dashes2[team.team],
+                            },
+                        })
                     }
-
-                    map.current.addSource(`${season}-line-${team.team}`, {
-                        type: "geojson",
-                        data: lineData,
-                    })
-                    allCoords.push(...lineData.geometry.coordinates)
-
-                    map.current.addLayer({
-                        id: `${season}-line-${team.team}`,
-                        type: "line",
-                        source: `${season}-line-${team.team}`,
-                        layout: {
-                            "line-join": "round",
-                            "line-cap": "round",
-                        },
-                        paint: {
-                            "line-color": season_challenges.length == 1 ? colours[team.team] : season_colours[season],
-                            "line-width": 3,
-                            "line-opacity": 0.8,
-                            "line-dasharray": (season == 2 || season_number == 3) ? track_dashes3[team.team] : track_dashes2[team.team],
-                        },
-                    })
                 })
             }
 
@@ -359,8 +368,8 @@ function App() {
         <div>
             <div ref={mapContainer} className="map-container" />
 
-            <div className="map-selector">
-                <label htmlFor="season" className="selector-label">Season:</label>
+            <div className="season-selector">
+                <label htmlFor="season" className="season-selector-label">Season:</label>
                 <select onFocus={(e) => (e.target.size=10)} onBlur={(e) => (e.target.size=0)}
                 onChange={(e) => {
                     e.target.size=1
@@ -374,6 +383,24 @@ function App() {
                     <option value="1" data-colour={season_colours[0]} style={{ "color":season_colours[0] }}>Season 1</option>
                     <option value="2" data-colour={season_colours[1]} style={{ "color":season_colours[1] }}>Season 2</option>
                     <option value="3" data-colour={season_colours[2]} style={{ "color":season_colours[2] }}>Season 3</option>
+                </select>
+            </div>
+
+            <div className="team-selector">
+                <label htmlFor="team" className="team-selector-label">Team:</label>
+                <select onFocus={(e) => (e.target.size=5)} onBlur={(e) => (e.target.size=0)}
+                onChange={(e) => {
+                    e.target.size=1
+                    e.target.blur()
+                    const option = e.target.options[e.target.selectedIndex]
+                    e.target.style.color = option.getAttribute("data-colour")
+                    setTeam(e.target.value)
+                    resetMap()
+                }}>
+                    <option value="all" data-colour="black" style={{ "color":"black" }}>All teams</option>
+                    <option value="red" data-colour={colours["red"]} style={{ "color":colours["red"] }}>Red</option>
+                    <option value="yellow" data-colour={colours["yellow"]} style={{ "color":colours["yellow"] }}>Yellow</option>
+                    <option value="green" data-colour={colours["green"]} style={{ "color":colours["green"] }}>Green</option>
                 </select>
             </div>
         </div>
