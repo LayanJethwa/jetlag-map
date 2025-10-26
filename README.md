@@ -1,13 +1,14 @@
 
 # Jet Lag map
 
-This is a map of challenges and routes taken in the series Jet Lag: The Game. I have built it using mapboxgl, ReactJs, and Vite. It currently runs somewhat slowly as it is not yet optimized, but I hope to fix this in the future. I have manually inputted data from the first 3 seasons, and aim to eventually have all the seasons on there.
+This is a map of challenges and routes taken in the series Jet Lag: The Game. I have built it using mapboxgl, ReactJs, and Vite. I have manually inputted data from the first 3 seasons, and aim to eventually have all the seasons on there.
 
 ## Features
 
 - Global or per season map view
 - Markers for challenges with full information, including veto stamps if appropriate
 - Tracks colour-coded per team, showing the routes taken
+    - Shorter tracks are computed using the Mapbox directions API, longer ones are following great circles
 - Highlights for certain areas of the map when pertinent to the game (see seasons 1 and 3)
 
 

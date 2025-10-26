@@ -1,0 +1,314 @@
+{
+    "Cheyenne": [
+        -104.819883,
+        41.135453
+    ],
+    "Denver": [
+        -104.986109,
+        39.741681
+    ],
+    "Sacramento": [
+        -121.493933,
+        38.581021
+    ],
+    "Carson City": [
+        -119.766995,
+        39.164579
+    ],
+    "Phoenix": [
+        -112.075098,
+        33.44823
+    ],
+    "Salem": [
+        -123.036676,
+        44.940689
+    ],
+    "Boise": [
+        -116.202327,
+        43.615045
+    ],
+    "Salt Lake City": [
+        -111.889779,
+        40.762759
+    ],
+    "Helena": [
+        -112.038543,
+        46.588854
+    ],
+    "New York City": [
+        -74.005994,
+        40.712749
+    ],
+    "Amsterdam Schiphol": [
+        4.762689,
+        52.30897
+    ],
+    "Milan MXP T1": [
+        8.712394,
+        45.627316
+    ],
+    "Vondelpark Amsterdam": [
+        4.868662,
+        52.358486
+    ],
+    "Busto Arsizio": [
+        8.85081,
+        45.611343
+    ],
+    "Museumstraat Amsterdam": [
+        4.885269,
+        52.360018
+    ],
+    "Max Euweplein Amsterdam": [
+        4.882802,
+        52.362434
+    ],
+    "Leidsestraat Amsterdam": [
+        4.885579,
+        52.365553
+    ],
+    "Leidseplein Amsterdam": [
+        4.88239,
+        52.363915
+    ],
+    "Pieter Cornelisz Hooftstraat Amsterdam": [
+        4.87982,
+        52.360016
+    ],
+    "Museumplein Amsterdam": [
+        4.880841,
+        52.357928
+    ],
+    "Elandsgracht Amsterdam": [
+        4.879739,
+        52.369288
+    ],
+    "Marnixstraat 1000 Amsterdam": [
+        4.879639,
+        52.366384
+    ],
+    "Siloso Beach Singapore": [
+        103.814699,
+        1.254171
+    ],
+    "Palawan Beach Singapore": [
+        103.821103,
+        1.250388
+    ],
+    "Crawford Lane Singapore": [
+        103.862207,
+        1.305341
+    ],
+    "Bayfront Singapore": [
+        103.858014,
+        1.280354
+    ],
+    "Beulah Street Kirribilli Sydney": [
+        151.21732,
+        -33.850714
+    ],
+    "Santa Monica Pier": [
+        -118.496869,
+        34.009827
+    ],
+    "Lille": [
+        3.063554,
+        50.6363
+    ],
+    "Pont Jacquard Calais": [
+        1.851642,
+        50.953335
+    ],
+    "Quai de la Tamise Calais": [
+        1.852203,
+        50.954765
+    ],
+    "Place D'Armes Calais": [
+        1.850252,
+        50.959799
+    ],
+    "Rue Margolle Calais": [
+        1.852152,
+        50.962792
+    ],
+    "Pont Henri Henon Calais": [
+        1.847382,
+        50.962058
+    ],
+    "Bd Jacquard Calais": [
+        1.854053,
+        50.950535
+    ],
+    "Bd de Denain Paris": [
+        2.354437,
+        48.879349
+    ],
+    "Rue de Dunkerque Paris": [
+        2.351613,
+        48.880722
+    ],
+    "Rue de la Harpe Paris": [
+        2.34445,
+        48.852226
+    ],
+    "Quai Saint-Michel Paris": [
+        2.345715,
+        48.853387
+    ],
+    "Quai Francois Mauriac Paris": [
+        2.377419,
+        48.834052
+    ],
+    "Rue de General Leclerc Saint-Quentin": [
+        3.300483,
+        49.839243
+    ],
+    "Saint-Quentin": [
+        3.286432,
+        49.84671
+    ],
+    "Maubeuge": [
+        3.973909,
+        50.278862
+    ],
+    "Fonsnylaan Brussels": [
+        4.335275,
+        50.833538
+    ],
+    "Luchthaven Brussels": [
+        4.480482,
+        50.897238
+    ],
+    "Fontanestrasse 50670 Koln": [
+        6.958633,
+        50.95653
+    ],
+    "Bahnhofsvorplatz Koln": [
+        6.957435,
+        50.941941
+    ],
+    "Am Alten Ufer Koln": [
+        6.96191,
+        50.9441
+    ],
+    "Strasbourg": [
+        7.746848,
+        48.583483
+    ],
+    "Pl de la Gare Strasbourg": [
+        7.736399,
+        48.585067
+    ],
+    "Chicago": [
+        -87.632362,
+        41.881953
+    ],
+    "Portland": [
+        -122.678367,
+        45.515197
+    ],
+    "Butte MO": [
+        -112.537969,
+        46.012698
+    ],
+    "San Francisco": [
+        -122.419359,
+        37.779238
+    ],
+    "Reno": [
+        -119.812917,
+        39.525781
+    ],
+    "Singapore": [
+        103.808053,
+        1.351616
+    ],
+    "Sydney": [
+        151.20695,
+        -33.86873
+    ],
+    "Nadi": [
+        177.412786,
+        -17.773534
+    ],
+    "Los Angeles": [
+        -118.254187,
+        34.048051
+    ],
+    "Cancun": [
+        -86.85176,
+        21.16188
+    ],
+    "Amsterdam": [
+        4.9,
+        52.378
+    ],
+    "Charleville": [
+        4.720294,
+        49.77245
+    ],
+    "Dunkirk": [
+        2.376792,
+        51.034397
+    ],
+    "Calais": [
+        1.849309,
+        50.958817
+    ],
+    "Amiens": [
+        2.300174,
+        49.894585
+    ],
+    "Pl Louis Armand Paris": [
+        2.373436,
+        48.845111
+    ],
+    "Vilmorin": [
+        2.257786,
+        48.727173
+    ],
+    "Offenburg": [
+        7.942883,
+        48.469563
+    ],
+    "Karlsruhe": [
+        8.401216,
+        49.009716
+    ],
+    "Mannheim": [
+        8.467922,
+        49.4871
+    ],
+    "Stuttgart": [
+        9.17742,
+        48.77353
+    ],
+    "Rdpt D'Europe Bezannes": [
+        3.998391,
+        49.215322
+    ],
+    "Ormes Marne": [
+        3.956625,
+        49.238163
+    ],
+    "Hirson": [
+        4.0812,
+        49.924377
+    ],
+    "Tergnier": [
+        3.294265,
+        49.65441
+    ],
+    "Rue Du Progres Brussels": [
+        4.361797,
+        50.863143
+    ],
+    "Frankfurt": [
+        8.683012,
+        50.110596
+    ],
+    "Juvisy": [
+        2.375906,
+        48.689487
+    ]
+}

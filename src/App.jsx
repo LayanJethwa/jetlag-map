@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react"
 import mapboxgl from "mapbox-gl"
-import mbxGeocoding from "@mapbox/mapbox-sdk/services/geocoding"
 import * as turf from '@turf/turf'
 
 import "mapbox-gl/dist/mapbox-gl.css"
@@ -11,16 +10,10 @@ import locations from './data/locations.json'
 import highlights from './data/highlights.json'
 import statesGeoJSON from './data/us-states.json'
 
-mapboxgl.accessToken = "pk.eyJ1IjoibGF5YW5qZXRod2EiLCJhIjoiY21nZmp4aXgwMDhpcjJqc2NwN2FtdDJ3aiJ9.dREYuWx-eMBTAT0HDkZF5g"
+import geocoded_locations from './data/geocoded_locations.json'
+import driving_routes from './data/resampled_driving_routes.json'
 
-const getDrivingRoute = async (coords) => {
-    if (coords.length < 2) return null
-    const url = `https://api.mapbox.com/directions/v5/mapbox/driving/${coords[0][0]},${coords[0][1]};${coords[1][0]},${coords[1][1]}?geometries=geojson&overview=full&access_token=${mapboxgl.accessToken}`
-    const response = await fetch(url)
-    const data = await response.json()
-    if (!data.routes || !data.routes[0]) return null
-    return data.routes[0].geometry.coordinates
-}
+mapboxgl.accessToken = "pk.eyJ1IjoibGF5YW5qZXRod2EiLCJhIjoiY21nZmp4aXgwMDhpcjJqc2NwN2FtdDJ3aiJ9.dREYuWx-eMBTAT0HDkZF5g"
 
 function createLoop(start, end, smoothness = 100) {
     const [lng1, lat1] = start
@@ -81,7 +74,6 @@ function App() {
 
     const mapContainer = useRef(null)
     const map = useRef(null)
-    const geocodingClient = mbxGeocoding({ accessToken: mapboxgl.accessToken })
 
     useEffect(() => {
 
@@ -92,15 +84,7 @@ function App() {
                 const resolvedChallenges = await Promise.all(
                     season_challenges[season].map(async (c) => {
                         if (typeof c.location === "string") {
-                            try {
-                                const res = await geocodingClient.forwardGeocode({
-                                    query: c.location,
-                                    limit: 1,
-                                }).send()
-                                return { ...c, location:res.body.features[0]?.geometry.coordinates || [0, 0] }
-                            } catch {
-                                return { ...c, location: [0, 0] }
-                            }
+                            return { ...c, location:geocoded_locations[c.location] }
                         }
                         return c
                     })
@@ -159,56 +143,43 @@ function App() {
             for (let season = 0; season < season_locations.length; season++) {
                 const resolvedTracks = await Promise.all(
                     season_locations[season].map(async (teamData) => {
-                        const coords = await Promise.all(
-                            teamData.locations.map(async (loc) => {
-                                if (typeof loc === "string") {
-                                    try {
-                                        const res = await geocodingClient.forwardGeocode({query: loc, limit: 1}).send()
-                                        return res.body.features[0]?.geometry.coordinates || [0, 0]
-                                    } catch { return [0, 0] }
-                                } else if (Array.isArray(loc)) {
-                                    return await Promise.all(loc.map(async (place) => {
-                                        if (typeof place === "string") {
-                                            try {
-                                                const res = await geocodingClient.forwardGeocode({ query: place, limit: 1 }).send()
-                                                return res.body.features[0]?.geometry.coordinates || [0, 0]
-                                            } catch { return [0, 0] }
-                                        }
-                                        return place
-                                    }))
-                                }
-                                return loc
-                            })
-                        )
+                        const locations = teamData.locations
+                        const coords = teamData.locations.map((loc) => {
+                            if (typeof loc === "string") {
+                                return geocoded_locations[loc]
+                            } else if (Array.isArray(loc)) {
+                                return loc.map((place) => {
+                                    if (typeof place === "string") {
+                                        return geocoded_locations[place]
+                                    }
+                                    return place
+                                })
+                            }
+                            return loc
+                        })
 
                         var combinedCoords = []
 
                         for (let i = 0; i < coords.length - 1; i++) {
                             var start = coords[i]
                             var end = coords[i + 1]
+                            var start_str = locations[i]
+                            var end_str = locations[i + 1]
 
                             if (Array.isArray(start[0])) {
                                 combinedCoords.push(...createLoop(...start))
-                                start = start[1]
+                                start = start[0]
+                                start_str = start_str[0]
                             } else if (Array.isArray(end[0])) {
                                 end = end[0]
+                                end_str = end_str[0]
                             }
 
                             const distance = turf.distance(start, end)
                             let segmentCoords
 
                             if (distance <= maxDistance) {
-                                segmentCoords = await getDrivingRoute([start, end])
-                                const line = turf.lineString(segmentCoords)
-                                const length = turf.length(line, { units: 'kilometers' })
-                                const resampledCoords = []
-                                const spacing = 0.1
-                                for (let i = 0; i <= length; i += spacing) {
-                                    const pt = turf.along(line, i, { units: 'kilometers' })
-                                    resampledCoords.push(pt.geometry.coordinates)
-                                }
-                                segmentCoords = resampledCoords
-
+                                segmentCoords = driving_routes[`${start_str}/${end_str}`]
                             } else {
                                 const line = turf.greatCircle(start, end, { npoints: 50 })
                                 segmentCoords = line.geometry.coordinates
